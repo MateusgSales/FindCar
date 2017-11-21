@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Findicar</string>
+    <string name="title_activity_mapa">Findcar</string>
+
+    //Car Location
+    <string name="car_latitude">Findcar</string>
+    <string name="car_longitude">Findcar</string>
+</resources>

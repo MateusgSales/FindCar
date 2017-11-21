@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.findcar.mateus.findicar.MapaActivity" />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="@color/colorPrimary"
+        fab:menu_colorPressed="@color/colorPrimaryDark"
+        fab:menu_colorRipple="#a8d9f5"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#fdfdfd"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="@color/colorPrimaryDark"
+        fab:menu_labels_colorPressed="@color/colorPrimaryDark"
+        fab:menu_labels_colorRipple="#a8d9f5"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_label="Fechar Menu"
+        fab:menu_fab_show_animation="@anim/fab_scale_up"
+        fab:menu_fab_hide_animation="@anim/fab_scale_down">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_compartilhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            fab:fab_size="mini"
+            fab:fab_label="Compartilhar"
+            fab:fab_colorNormal="@color/colorPrimaryDark"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_rota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_route"
+            fab:fab_size="mini"
+            fab:fab_label="Traçar Rota"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimary"/>
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_deletar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            fab:fab_size="mini"
+            fab:fab_label="Deletar Local"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimary"/>
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>
+
